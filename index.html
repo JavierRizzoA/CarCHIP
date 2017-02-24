@@ -8,9 +8,7 @@
   </head>
   <body>
     <div class="row">
-      <div class="clock">
-        22:22
-      </div>
+      <div class="clock"></div>
     </div>
     <div class="row">
       <div class="btn blue"><i class="fa fa-bluetooth-b fa-3x"></i></div>
@@ -24,5 +22,12 @@
       <div class="btn grey"><i class="fa fa-sliders fa-3x"></i></div>
       <div class="btn lblue"><i class="fa fa-info-circle fa-3x"></i></div>
     </div>
+    <script>window.$ = document.querySelectorAll.bind(document);</script>
+    <script src="js/clock.js"></script>
+    <script>
+document.body.onLoad = function() {
+  updateClock();
+}
+    </script>
   </body>
 </html>
